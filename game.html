@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>A* Algorithm - Game</title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+		<script src="p5.js"></script>
+		<script src="./aStar.js"></script>
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+		<main></main>
+		<div>
+			<a href="./index.html"><button style="margin-right: 50px">Back</button></a>
+			<p style="width: 50%; margin: 10px; margin-left: 25px">
+				The buttons below let you place different objects onto the map. You can either click or click and drag
+				to place. Roads (blue) are faster to travel on, mountains (light grey) are slower to travel on, and
+				walls (dark grey) can't be traveled on. Click the radio buttons to change the heuristic used by the
+				algorithm. For the roads/mountains to properly work, the heuristic must be set to something other than
+				Manhattan. Click the Play button to actually start the algorithm. Clicking on the map while playing will
+				move the player (green). The numbers in each cell represent the cost of moving to that cell. The path
+				will be displayed in blue.
+			</p>
+		</div>
+	</body>
+</html>
